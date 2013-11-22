@@ -1,6 +1,11 @@
-Simulated the oscilloscope of 10khz and 1Msps on TFT LCD using ARM Cortex M3 giving it ultra-portable, handy and low-cost advantage.Features provided Start/Stop button, potentiometer acting as time per division knob, frequency, Vmax and Vmin of the input signal.
+DigitalColourOrgan
+==================
 
+This project is done in guidance of Prof. Dhananjay V. Gadre. and with my collegue Rohan Seth at 
+Centre for Electronic Design and Technology(CEDT), Netaji Subhas Institute of Technology, New Delhi.
 
-
-
-
+Implemented using Digital Filters on ARM Cortex-M3 microcontroller. Three filters of low, mid and high
+frequency range are used. Audio input is provided through a 3.5mm Audio Jack with a clamping circuit 
+as output through audio jack can be negative which can not sampled by ADC(Analog to Digital Convertor).
+IQmath Library is used to perform floating point calculations. And as we generally do have more flash 
+memory than SRAM so filter coefficients are stored in Flash to achieve high order filters.
